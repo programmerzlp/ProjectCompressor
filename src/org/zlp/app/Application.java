@@ -25,7 +25,7 @@ public class Application {
 			IllegalAccessException, UnsupportedLookAndFeelException {
 		System.setProperty("java.awt.im.style", "on-the-spot");// 系统属性设置，消除中文浮动框
 		UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());// 设置成系统样式
-		SwingUtilities.invokeLater(new Runnable() {
+		SwingUtilities.invokeLater(new Runnable() { 
 			@Override
 			public void run() {
 				MainFrame.INSTANCE.createMainFrame();
